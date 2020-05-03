@@ -2,6 +2,8 @@ FROM cntrump/ubuntu-template:20.04 AS base
 
 FROM cntrump/ubuntu-toolchains:20.04 AS builder
 
+RUN apt-get update && apt-get install flex bison -y
+
 RUN git clone -b v1.4.2 --depth=1 https://github.com/cntrump/Dante.git \
     && cd ./Dante && autoreconf -i \
     && ./configure --prefix=/usr/local \
