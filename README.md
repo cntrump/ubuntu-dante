@@ -1,4 +1,4 @@
-# dante socks server
+# dante socks5 server [![](https://img.shields.io/docker/pulls/cntrump/ubuntu-dante)](https://hub.docker.com/r/cntrump/ubuntu-dante)
 
 ubuntu docker image.
 
